@@ -2,15 +2,19 @@ package com.curty.libraryAPI.api.dto;
 
 import lombok.*;
 
-@Getter
-@Setter
+import javax.validation.constraints.NotEmpty;
+
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class BookDOT {
     private Long id;
+    @NotEmpty
     private String title;
+    @NotEmpty
     private String author;
+    @NotEmpty
     private String isbn;
 
     /*public Long getId() {

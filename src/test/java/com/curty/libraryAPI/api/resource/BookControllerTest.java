@@ -1,9 +1,11 @@
 package com.curty.libraryAPI.api.resource;
 
 import com.curty.libraryAPI.api.dto.BookDOT;
+import com.curty.libraryAPI.exception.BusinessException;
 import com.curty.libraryAPI.model.entity.Book;
 import com.curty.libraryAPI.service.BookService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -35,11 +37,15 @@ public class BookControllerTest {
     @MockBean
     BookService service;
 
+    private BookDOT createNewBook() {
+        return BookDOT.builder().author("Fulano").title("Titulo").isbn("12345").build();
+    }
+
     @Test
     @DisplayName("Must successfully create book")
     public void createBookTest() throws Exception{
         //scenario
-        BookDOT dto = BookDOT.builder().author("Fulano").title("Titulo").isbn("12345").build();
+        BookDOT dto = createNewBook();
         BDDMockito.given(service.save(Mockito.any(Book.class)))
                 .willReturn(Book.builder()
                         .id((long) 10)
@@ -68,7 +74,43 @@ public class BookControllerTest {
 
     @Test
     @DisplayName("should return validation error when book creation data is insufficient")
-    public void createInvalidBookTest(){
+    public void createInvalidBookTest() throws Exception {
+        //scenario
+        //execution
+        String json = new ObjectMapper().writeValueAsString(new BookDOT());
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders
+                .post(BOOK_API)
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .content(json);
+        //JSON is Null
+        //verifications
+        mvc.perform(request)
+                .andExpect(MockMvcResultMatchers.status().isBadRequest())
+                .andExpect(MockMvcResultMatchers.jsonPath("errors", Matchers.hasSize(3)));
+    }
 
+    @Test
+    @DisplayName("should return validation error when isbn book is duplicated")
+    public void createBookWithDuplicatedIsbn() throws Exception{
+        //scenario
+        BookDOT dto = createNewBook();
+        String msgError = "Isbn already filled";
+        BDDMockito.given(service.save(Mockito.any(Book.class)))
+                .willThrow(new BusinessException(msgError));
+        //execution
+        String json = new ObjectMapper().writeValueAsString(dto);
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders
+                .post(BOOK_API)
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .content(json);
+
+        //verifications
+        mvc.perform(request)
+                .andExpect(MockMvcResultMatchers.status().isBadRequest())
+                .andExpect(MockMvcResultMatchers.jsonPath("errors", Matchers.hasSize(1)))
+                .andExpect(MockMvcResultMatchers.jsonPath("errors[0]")
+                        .value(msgError));
     }
 }
