@@ -67,4 +67,35 @@ public class BookRepositoryTest {
         Assertions.assertThat(foundBook.isPresent()).isTrue();
 
     }
+
+    @Test
+    @DisplayName("Should save a book")
+    public void saveBookTest(){
+        //scenario
+        Book book = createNewBook();
+
+        //execution
+        Book savedBook = repository.save(book);
+
+        //verfications
+        Assertions.assertThat(savedBook.getId()).isNotNull();
+
+    }
+
+    @Test
+    @DisplayName("Should delete a book")
+    public void deleteBookTest(){
+        //scenario
+        Book book = createNewBook();
+        entityManager.persist(book);
+        Book foundBook = entityManager.find(Book.class, book.getId());
+        //execution
+        repository.delete(foundBook);
+
+        Book deletedBook = entityManager.find(Book.class, book.getId());
+
+        //verfications
+        Assertions.assertThat(deletedBook).isNull();
+
+    }
 }
