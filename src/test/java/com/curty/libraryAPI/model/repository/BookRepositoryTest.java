@@ -11,6 +11,8 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.util.Optional;
+
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
 //Create a DB instance in memory, when stop clean
@@ -23,12 +25,16 @@ public class BookRepositoryTest {
     @Autowired
     BookRepository repository;
 
+    private Book createNewBook() {
+        return Book.builder().title("Aventuras").author("Fulano").isbn("123").build();
+    }
+
     @Test
     @DisplayName("Should return true when exist a book in DB with the ispn informed")
     public void returnTrueWhenIsbnExist(){
         //scenario
         String isbn = "123";
-        Object book = Book.builder().title("Aventuras").author("Fulano").isbn(isbn).build();
+        Object book = createNewBook();
         entityManager.persist(book);
         //execution
         boolean exists = repository.existsByIsbn(isbn);
@@ -45,5 +51,20 @@ public class BookRepositoryTest {
         boolean exists = repository.existsByIsbn(isbn);
         //verification
         Assertions.assertThat(exists).isFalse();
+    }
+
+    @Test
+    @DisplayName("Should get a book by Id")
+    public void findByIdTest(){
+        //scenario
+        Book book = createNewBook();
+        entityManager.persist(book);
+
+        //execution
+        Optional<Book> foundBook = repository.findById(book.getId());
+
+        //verfications
+        Assertions.assertThat(foundBook.isPresent()).isTrue();
+
     }
 }
