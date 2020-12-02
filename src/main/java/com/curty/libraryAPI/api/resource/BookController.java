@@ -81,16 +81,5 @@ public class BookController {
         return new PageImpl<BookDOT>(list, pageRequest, result.getTotalElements());
     }
 
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public APIErrors handleValidationException(MethodArgumentNotValidException ex){
-        BindingResult bindingResult = ex.getBindingResult();
-        return new APIErrors(bindingResult);
-    }
 
-    @ExceptionHandler(BusinessException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public APIErrors handleBusinessException(BusinessException ex){
-        return new APIErrors(ex);
-    }
 }
