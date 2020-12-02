@@ -25,7 +25,7 @@ public class BookRepositoryTest {
     @Autowired
     BookRepository repository;
 
-    private Book createNewBook() {
+    public static Book createNewBook() {
         return Book.builder().title("Aventuras").author("Fulano").isbn("123").build();
     }
 
@@ -63,7 +63,7 @@ public class BookRepositoryTest {
         //execution
         Optional<Book> foundBook = repository.findById(book.getId());
 
-        //verfications
+        //verifications
         Assertions.assertThat(foundBook.isPresent()).isTrue();
 
     }
@@ -77,7 +77,7 @@ public class BookRepositoryTest {
         //execution
         Book savedBook = repository.save(book);
 
-        //verfications
+        //verifications
         Assertions.assertThat(savedBook.getId()).isNotNull();
 
     }
@@ -94,7 +94,7 @@ public class BookRepositoryTest {
 
         Book deletedBook = entityManager.find(Book.class, book.getId());
 
-        //verfications
+        //verifications
         Assertions.assertThat(deletedBook).isNull();
 
     }
