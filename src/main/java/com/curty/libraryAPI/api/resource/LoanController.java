@@ -1,6 +1,7 @@
 package com.curty.libraryAPI.api.resource;
 
 import com.curty.libraryAPI.api.dto.LoanDTO;
+import com.curty.libraryAPI.api.dto.ReturnedLoanDTO;
 import com.curty.libraryAPI.model.entity.Book;
 import com.curty.libraryAPI.model.entity.Loan;
 import com.curty.libraryAPI.service.BookService;
@@ -45,5 +46,13 @@ public class LoanController {
         return entity.getId();
     }
 
+    @PatchMapping("{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void returnBook(@PathVariable Long id, @RequestBody ReturnedLoanDTO dto){
+        Loan loan = loanService.getById(id)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        loan.setReturned(dto.isReturned());
+        loanService.update(loan);
+    }
 
 }

@@ -1,12 +1,14 @@
 package com.curty.libraryAPI.api.resource;
 
 import com.curty.libraryAPI.api.dto.LoanDTO;
+import com.curty.libraryAPI.api.dto.ReturnedLoanDTO;
 import com.curty.libraryAPI.exception.BusinessException;
 import com.curty.libraryAPI.model.entity.Book;
 import com.curty.libraryAPI.model.entity.Loan;
 import com.curty.libraryAPI.service.BookService;
 import com.curty.libraryAPI.service.LoanService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.assertj.core.api.Assertions;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -27,6 +29,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.time.LocalDate;
 import java.util.Optional;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
@@ -123,5 +127,43 @@ public class LoanControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("errors", Matchers.hasSize(1)))
                 .andExpect(MockMvcResultMatchers.jsonPath("errors[0]")
                         .value("Book already loaned"));
+    }
+
+    @Test
+    @DisplayName("Should return a book")
+    public void returnBookTest() throws Exception{
+        //scenario with properties returned:true
+        ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
+        Loan loan = Loan.builder().id((long) 11).build();
+        BDDMockito.given(loanService.getById(Mockito.anyLong()))
+                .willReturn(Optional.of(loan));
+        String json = new ObjectMapper().writeValueAsString(dto);
+
+        mvc.perform(
+                patch(LOAN_API.concat("/11"))
+                .accept(MediaType.APPLICATION_JSON)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(json)
+        ).andExpect(MockMvcResultMatchers.status().isOk());
+
+        Mockito.verify(loanService, Mockito.times(1)).update(loan);
+    }
+
+    @Test
+    @DisplayName("Should return 404 when is a no existing book")
+    public void returnNoExistentBookTest() throws Exception{
+        //scenario with properties returned:true
+        ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
+        String json = new ObjectMapper().writeValueAsString(dto);
+
+        BDDMockito.given(loanService.getById(Mockito.anyLong()))
+                .willReturn(Optional.empty());
+
+        mvc.perform(
+                patch(LOAN_API.concat("/11"))
+                        .accept(MediaType.APPLICATION_JSON)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(json)
+        ).andExpect(MockMvcResultMatchers.status().isNotFound());
     }
 }
