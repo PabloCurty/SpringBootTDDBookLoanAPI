@@ -24,7 +24,7 @@ public class Loan {
     @Column
     private String customer;
 
-    @JoinColumn
+    @JoinColumn(name = "id_book")
     @ManyToOne
     private Book book;
 
