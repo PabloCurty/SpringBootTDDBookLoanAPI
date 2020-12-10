@@ -2,6 +2,7 @@ package com.curty.libraryAPI.service.impl;
 
 import com.curty.libraryAPI.api.dto.LoanFilterDTO;
 import com.curty.libraryAPI.exception.BusinessException;
+import com.curty.libraryAPI.model.entity.Book;
 import com.curty.libraryAPI.model.entity.Loan;
 import com.curty.libraryAPI.model.repository.LoanRepository;
 import com.curty.libraryAPI.service.LoanService;
@@ -44,5 +45,12 @@ public class LoanServiceImpl implements LoanService {
                         filterDTO.getCustomer(),
                         pageable
                 );
+    }
+
+    @Override
+    public Page<Loan> getLoanByBook(Book book, Pageable pageable) {
+        //passando um pageable com último parametro de um query method, o spring data
+        // já entende que a consulta é paginada, e já vai retornar uma página
+        return repository.findByBook(book, pageable);
     }
 }
