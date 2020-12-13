@@ -15,6 +15,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.LocalDate;
+import java.util.List;
 
 import static com.curty.libraryAPI.model.repository.BookRepositoryTest.createNewBook;
 
@@ -29,11 +30,11 @@ public class LoanRepositoryTest {
     @Autowired
     private LoanRepository repository;
 
-    private Loan createAndPersistLoan(Book book) {
+    private Loan createAndPersistLoan(Book book, LocalDate loanDate) {
         Loan loan = Loan.builder()
                 .book(book)
                 .customer("Fulano")
-                .loanDate(LocalDate.now())
+                .loanDate(loanDate)
                 .build();
         entityManager.persist(loan);
         return loan;
@@ -51,7 +52,7 @@ public class LoanRepositoryTest {
         //scenario
         Book book = createAndPersistBook();
 
-        Loan loan = createAndPersistLoan(book);
+        Loan loan = createAndPersistLoan(book, LocalDate.now());
 
         //execution
         boolean exists = repository.existsByBookAndNotReturned(book);
@@ -66,7 +67,7 @@ public class LoanRepositoryTest {
         //scenario
         Book book = createAndPersistBook();
 
-        Loan loan = createAndPersistLoan(book);
+        Loan loan = createAndPersistLoan(book, LocalDate.now());
         //execution
 
         Page<Loan> result = repository
@@ -82,5 +83,27 @@ public class LoanRepositoryTest {
         Assertions.assertThat(result.getPageable().getPageNumber()).isEqualTo(0);
         Assertions.assertThat(result.getPageable().getPageSize()).isEqualTo(10);
         Assertions.assertThat(result.getContent()).contains(loan);
+    }
+
+    @Test
+    @DisplayName("should return all overdue loans")
+    public void findByLoanDateLessThanAndNotReturnedTest(){
+        //scenario
+        Loan loan = createAndPersistLoan(createAndPersistBook(), LocalDate.now().minusDays(5));
+        //execution
+        List<Loan> result = repository.findByLoanDateLessThanAndNotReturned(LocalDate.now().minusDays(4));
+        //verification
+        Assertions.assertThat(result).hasSize(1).contains(loan);
+    }
+
+    @Test
+    @DisplayName("should not return overdue loans")
+    public void notFindByLoanDateLessThanAndNotReturnedTest(){
+        //scenario
+        Loan loan = createAndPersistLoan(createAndPersistBook(), LocalDate.now());
+        //execution
+        List<Loan> result = repository.findByLoanDateLessThanAndNotReturned(LocalDate.now().minusDays(4));
+        //verification
+        Assertions.assertThat(result).isEmpty();
     }
 }

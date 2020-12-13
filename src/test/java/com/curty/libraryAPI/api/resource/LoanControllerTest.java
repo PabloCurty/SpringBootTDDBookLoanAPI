@@ -9,7 +9,6 @@ import com.curty.libraryAPI.model.entity.Loan;
 import com.curty.libraryAPI.service.BookService;
 import com.curty.libraryAPI.service.LoanService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.assertj.core.api.Assertions;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -61,7 +60,7 @@ public class LoanControllerTest {
     @DisplayName("Should loan a book")
     public void createLoanTest() throws Exception{
         //scenario
-        LoanDTO dto = LoanDTO.builder().isbn("123").customer("Fulano").build();
+        LoanDTO dto = LoanDTO.builder().isbn("123").email("customer@email.com").customer("Fulano").build();
         String json = new ObjectMapper().writeValueAsString(dto);
 
         //obtem livro
