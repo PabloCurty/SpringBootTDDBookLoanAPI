@@ -2,8 +2,6 @@ package com.curty.libraryAPI.api.resource;
 
 import com.curty.libraryAPI.api.dto.BookDOT;
 import com.curty.libraryAPI.api.dto.LoanDTO;
-import com.curty.libraryAPI.api.exception.APIErrors;
-import com.curty.libraryAPI.exception.BusinessException;
 import com.curty.libraryAPI.model.entity.Book;
 import com.curty.libraryAPI.model.entity.Loan;
 import com.curty.libraryAPI.service.BookService;
@@ -14,8 +12,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
