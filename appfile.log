@@ -1,0 +1,547 @@
+2020-12-15 14:18:36.311  INFO 18264 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 18264 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 14:18:36.313  INFO 18264 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 14:18:36.366  INFO 18264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 14:18:36.366  INFO 18264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 14:18:37.494  INFO 18264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 14:18:37.563  INFO 18264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2020-12-15 14:18:38.255  INFO 18264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 14:18:38.268  INFO 18264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 14:18:38.270  INFO 18264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 14:18:38.374  INFO 18264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 14:18:38.375  INFO 18264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2007 ms
+2020-12-15 14:18:38.511  INFO 18264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 14:18:38.726  INFO 18264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 14:18:38.733  INFO 18264 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ae812718-453c-4c43-ab4a-3ecdd1f17c87'
+2020-12-15 14:18:38.857  INFO 18264 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 14:18:38.869  INFO 18264 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 14:18:38.926  INFO 18264 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 14:18:38.992  INFO 18264 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 14:18:39.142  INFO 18264 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 14:18:39.267  WARN 18264 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 14:18:39.299  INFO 18264 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 14:18:39.573  INFO 18264 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 14:18:39.674  INFO 18264 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 14:18:39.811  INFO 18264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 14:18:40.100  INFO 18264 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 14:18:40.108  INFO 18264 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 14:18:40.146  INFO 18264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 14:18:40.148  INFO 18264 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 14:18:40.170  INFO 18264 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 14:18:40.210  INFO 18264 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 14:18:40.382  INFO 18264 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 14:18:40.389  INFO 18264 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 14:18:40.409  INFO 18264 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 14:18:40.842  INFO 18264 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 14:18:40.858  INFO 18264 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 4.936 seconds (JVM running for 5.472)
+2020-12-15 14:18:45.557  INFO 18264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 14:18:45.560  INFO 18264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 14:18:45.561  INFO 18264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-15 14:21:06.605  INFO 18264 --- [http-nio-8080-exec-4] c.c.l.api.resource.BookController        : Creates a book for Isbn: string
+2020-12-15 14:24:00.960  INFO 18264 --- [http-nio-8080-exec-3] c.c.l.api.resource.BookController        : Deletes a book for Isbn: 
+2020-12-15 16:33:25.259  INFO 14820 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 14820 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 16:33:25.262  INFO 14820 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 16:33:25.333  INFO 14820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 16:33:25.334  INFO 14820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 16:33:27.271  INFO 14820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 16:33:27.373  INFO 14820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2020-12-15 16:33:28.338  INFO 14820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 16:33:28.357  INFO 14820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 16:33:28.359  INFO 14820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 16:33:28.476  INFO 14820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 16:33:28.478  INFO 14820 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3143 ms
+2020-12-15 16:33:28.663  INFO 14820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 16:33:28.931  INFO 14820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 16:33:28.938  INFO 14820 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:82df8653-b18c-418f-9d48-0ec5d6a0c9f6'
+2020-12-15 16:33:29.141  INFO 14820 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 16:33:29.160  INFO 14820 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 16:33:29.250  INFO 14820 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 16:33:29.388  INFO 14820 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 16:33:29.703  INFO 14820 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 16:33:29.748  WARN 14820 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 16:33:29.943  INFO 14820 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 16:33:30.071  INFO 14820 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 16:33:30.193  INFO 14820 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 16:33:30.341  INFO 14820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 16:33:30.515  INFO 14820 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 16:33:31.013  INFO 14820 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 16:33:31.033  INFO 14820 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 16:33:31.071  INFO 14820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 16:33:31.074  INFO 14820 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 16:33:31.112  INFO 14820 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 16:33:31.168  INFO 14820 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 16:33:31.382  INFO 14820 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 16:33:31.391  INFO 14820 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 16:33:31.412  INFO 14820 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 16:33:31.949  INFO 14820 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 16:33:31.970  INFO 14820 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 7.28 seconds (JVM running for 7.919)
+2020-12-15 16:33:36.904  INFO 14820 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 16:34:18.610  INFO 14820 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 16:34:18.610  INFO 14820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 16:34:18.618  INFO 14820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-12-15 16:37:08.419  WARN 14820 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://Visagio-1078:8080/actuator, healthUrl=http://Visagio-1078:8080/actuator/health, serviceUrl=http://Visagio-1078:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information. Further attempts are logged on DEBUG level
+2020-12-15 16:40:05.804  INFO 15024 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 15024 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 16:40:05.806  INFO 15024 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 16:40:05.858  INFO 15024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 16:40:05.858  INFO 15024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 16:40:07.018  INFO 15024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 16:40:07.094  INFO 15024 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2020-12-15 16:40:07.802  INFO 15024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 16:40:07.812  INFO 15024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 16:40:07.815  INFO 15024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 16:40:07.899  INFO 15024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 16:40:07.900  INFO 15024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2041 ms
+2020-12-15 16:40:08.032  INFO 15024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 16:40:08.213  INFO 15024 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 16:40:08.220  INFO 15024 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:0b0c18e4-a3a3-472c-beb3-544012598de7'
+2020-12-15 16:40:08.357  INFO 15024 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 16:40:08.370  INFO 15024 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 16:40:08.427  INFO 15024 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 16:40:08.483  INFO 15024 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 16:40:08.638  INFO 15024 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 16:40:08.738  WARN 15024 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 16:40:08.795  INFO 15024 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 16:40:09.012  INFO 15024 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 16:40:09.096  INFO 15024 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 16:40:09.221  INFO 15024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 16:40:09.366  INFO 15024 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 16:40:09.587  INFO 15024 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 16:40:09.597  INFO 15024 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 16:40:09.630  INFO 15024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 16:40:09.633  INFO 15024 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 16:40:09.656  INFO 15024 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 16:40:09.688  INFO 15024 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 16:40:09.868  INFO 15024 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 16:40:09.877  INFO 15024 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 16:40:09.895  INFO 15024 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 16:40:10.311  INFO 15024 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 16:40:10.325  INFO 15024 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 4.899 seconds (JVM running for 5.425)
+2020-12-15 16:40:14.168  INFO 15024 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 16:41:39.887  INFO 15024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-15 16:41:39.888  INFO 15024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-15 16:41:39.892  INFO 15024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-12-15 16:44:21.783  INFO 12276 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 12276 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 16:44:21.787  INFO 12276 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 16:44:21.852  INFO 12276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 16:44:21.852  INFO 12276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 16:44:23.155  INFO 12276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 16:44:23.236  INFO 12276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
+2020-12-15 16:44:24.084  INFO 12276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 16:44:24.100  INFO 12276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 16:44:24.103  INFO 12276 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 16:44:24.218  INFO 12276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 16:44:24.221  INFO 12276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2368 ms
+2020-12-15 16:44:24.357  INFO 12276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 16:44:24.545  INFO 12276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 16:44:24.552  INFO 12276 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9363f0cd-e2ea-41d3-8a69-5e179b267fa2'
+2020-12-15 16:44:24.703  INFO 12276 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 16:44:24.719  INFO 12276 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 16:44:24.807  INFO 12276 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 16:44:24.870  INFO 12276 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 16:44:25.024  INFO 12276 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 16:44:25.146  WARN 12276 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 16:44:25.188  INFO 12276 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 16:44:25.446  INFO 12276 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 16:44:25.549  INFO 12276 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 16:44:25.682  INFO 12276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 16:44:25.833  INFO 12276 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 16:44:25.898  INFO 12276 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5dbbd29f-d0de-4954-b55a-ddfeafbe8ea1
+
+2020-12-15 16:44:25.989  INFO 12276 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 16:44:26.000  INFO 12276 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 16:44:26.048  INFO 12276 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a50a355, org.springframework.security.web.context.SecurityContextPersistenceFilter@730cd3c5, org.springframework.security.web.header.HeaderWriterFilter@35422c3c, org.springframework.security.web.csrf.CsrfFilter@149436ec, org.springframework.security.web.authentication.logout.LogoutFilter@528d2c73, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@360cd557, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2ad8c05f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1d0a2beb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61da612e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2efcce63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5713e3c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f6bfa75, org.springframework.security.web.session.SessionManagementFilter@5b6a39b3, org.springframework.security.web.access.ExceptionTranslationFilter@544b3f92, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@592deaa4]
+2020-12-15 16:44:26.192  INFO 12276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 16:44:26.195  INFO 12276 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 16:44:26.218  INFO 12276 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 16:44:26.259  INFO 12276 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 16:44:26.438  INFO 12276 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 16:44:26.447  INFO 12276 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 16:44:26.461  INFO 12276 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 16:44:26.919  INFO 12276 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 16:44:26.938  INFO 12276 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.591 seconds (JVM running for 6.169)
+2020-12-15 16:44:30.967  INFO 12276 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 16:45:12.776  WARN 12276 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://Visagio-1078:8080/actuator, healthUrl=http://Visagio-1078:8080/actuator/health, serviceUrl=http://Visagio-1078:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information. Further attempts are logged on DEBUG level
+2020-12-15 16:57:15.175  INFO 13828 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 13828 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 16:57:15.179  INFO 13828 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 16:57:15.238  INFO 13828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 16:57:15.238  INFO 13828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 16:57:16.519  INFO 13828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 16:57:16.594  INFO 13828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2020-12-15 16:57:17.367  INFO 13828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 16:57:17.384  INFO 13828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 16:57:17.387  INFO 13828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 16:57:17.506  INFO 13828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 16:57:17.509  INFO 13828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2270 ms
+2020-12-15 16:57:17.691  INFO 13828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 16:57:17.903  INFO 13828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 16:57:17.908  INFO 13828 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:439134d6-ae25-474d-a398-fdb78b431a51'
+2020-12-15 16:57:18.059  INFO 13828 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 16:57:18.076  INFO 13828 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 16:57:18.128  INFO 13828 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 16:57:18.190  INFO 13828 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 16:57:18.273  WARN 13828 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 16:57:18.333  INFO 13828 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 16:57:18.546  INFO 13828 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 16:57:18.814  INFO 13828 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 16:57:18.906  INFO 13828 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 16:57:19.027  INFO 13828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 16:57:19.176  INFO 13828 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 16:57:19.300  INFO 13828 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fd82fb36-2cab-45ff-aea1-e8874991a74e
+
+2020-12-15 16:57:19.303  INFO 13828 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 16:57:19.311  INFO 13828 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 16:57:19.386  INFO 13828 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7887e36a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d3a3eb8, org.springframework.security.web.header.HeaderWriterFilter@556f6d16, org.springframework.security.web.authentication.logout.LogoutFilter@5f627b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26237a43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ea037b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@573132d7, org.springframework.security.web.session.SessionManagementFilter@5f64e17b, org.springframework.security.web.access.ExceptionTranslationFilter@6af43409, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4613fe3a]
+2020-12-15 16:57:19.486  INFO 13828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 16:57:19.488  INFO 13828 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 16:57:19.520  INFO 13828 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 16:57:19.563  INFO 13828 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 16:57:19.751  INFO 13828 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 16:57:19.758  INFO 13828 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 16:57:19.770  INFO 13828 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 16:57:20.172  INFO 13828 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 16:57:20.189  INFO 13828 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.397 seconds (JVM running for 5.957)
+2020-12-15 16:57:24.256  INFO 13828 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 16:57:56.105  WARN 13828 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://Visagio-1078:8080/actuator, healthUrl=http://Visagio-1078:8080/actuator/health, serviceUrl=http://Visagio-1078:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information. Further attempts are logged on DEBUG level
+2020-12-15 17:01:06.101  WARN 13828 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://Visagio-1078:8080/actuator, healthUrl=http://Visagio-1078:8080/actuator/health, serviceUrl=http://Visagio-1078:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information. Further attempts are logged on DEBUG level
+2020-12-15 17:02:51.191  INFO 18316 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 18316 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 17:02:51.193  INFO 18316 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 17:02:51.244  INFO 18316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 17:02:51.244  INFO 18316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 17:02:52.541  INFO 18316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 17:02:52.646  INFO 18316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2020-12-15 17:02:53.546  INFO 18316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 17:02:53.563  INFO 18316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 17:02:53.567  INFO 18316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 17:02:53.672  INFO 18316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 17:02:53.675  INFO 18316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2430 ms
+2020-12-15 17:02:53.825  INFO 18316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 17:02:54.112  INFO 18316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 17:02:54.119  INFO 18316 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:78e9276f-2c5e-4974-af8c-b136530e51a7'
+2020-12-15 17:02:54.343  INFO 18316 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 17:02:54.360  INFO 18316 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 17:02:54.449  INFO 18316 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 17:02:54.518  INFO 18316 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 17:02:54.599  WARN 18316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 17:02:54.658  INFO 18316 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 17:02:54.802  INFO 18316 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 17:02:55.091  INFO 18316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 17:02:55.191  INFO 18316 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 17:02:55.327  INFO 18316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 17:02:55.462  INFO 18316 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 17:02:55.592  INFO 18316 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0806cb1d-788a-4006-b501-15c5cb2e12d6
+
+2020-12-15 17:02:55.601  INFO 18316 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 17:02:55.609  INFO 18316 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 17:02:55.685  INFO 18316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7887e36a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d3a3eb8, org.springframework.security.web.header.HeaderWriterFilter@556f6d16, org.springframework.security.web.authentication.logout.LogoutFilter@5f627b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26237a43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ea037b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@573132d7, org.springframework.security.web.session.SessionManagementFilter@5f64e17b, org.springframework.security.web.access.ExceptionTranslationFilter@6af43409, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4613fe3a]
+2020-12-15 17:02:55.763  INFO 18316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 17:02:55.764  INFO 18316 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 17:02:55.782  INFO 18316 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 17:02:55.821  INFO 18316 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 17:02:56.003  INFO 18316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 17:02:56.010  INFO 18316 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 17:02:56.028  INFO 18316 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 17:02:56.577  INFO 18316 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 17:02:56.596  INFO 18316 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.8 seconds (JVM running for 6.341)
+2020-12-15 17:03:00.454  INFO 18316 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 17:04:17.974  INFO 10652 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 10652 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 17:04:17.977  INFO 10652 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 17:04:18.032  INFO 10652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 17:04:18.032  INFO 10652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 17:04:19.263  INFO 10652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 17:04:19.334  INFO 10652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2020-12-15 17:04:20.061  INFO 10652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 17:04:20.070  INFO 10652 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 17:04:20.072  INFO 10652 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 17:04:20.165  INFO 10652 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 17:04:20.165  INFO 10652 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2132 ms
+2020-12-15 17:04:20.293  INFO 10652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 17:04:20.492  INFO 10652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 17:04:20.496  INFO 10652 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ec7c7eba-8521-4773-a77b-a1d13548cf85'
+2020-12-15 17:04:20.633  INFO 10652 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 17:04:20.643  INFO 10652 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 17:04:20.705  INFO 10652 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 17:04:20.759  INFO 10652 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 17:04:20.840  WARN 10652 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 17:04:20.911  INFO 10652 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 17:04:21.069  INFO 10652 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 17:04:21.337  INFO 10652 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 17:04:21.429  INFO 10652 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 17:04:21.562  INFO 10652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 17:04:21.706  INFO 10652 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 17:04:21.836  INFO 10652 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1dddd6dd-4f98-416f-acc8-3da2fbaed5f1
+
+2020-12-15 17:04:21.842  INFO 10652 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 17:04:21.851  INFO 10652 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 17:04:21.922  INFO 10652 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f488163, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c57ec7b, org.springframework.security.web.header.HeaderWriterFilter@1f50ee9a, org.springframework.security.web.authentication.logout.LogoutFilter@31d98476, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@360cd557, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73c48dca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c0bca02, org.springframework.security.web.session.SessionManagementFilter@280a8c6f, org.springframework.security.web.access.ExceptionTranslationFilter@397d019d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13b48397]
+2020-12-15 17:04:22.001  INFO 10652 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 17:04:22.003  INFO 10652 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 17:04:22.022  INFO 10652 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 17:04:22.067  INFO 10652 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 17:04:22.264  INFO 10652 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 17:04:22.275  INFO 10652 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 17:04:22.296  INFO 10652 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 17:04:22.698  INFO 10652 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 17:04:22.712  INFO 10652 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.125 seconds (JVM running for 5.678)
+2020-12-15 17:04:26.711  INFO 10652 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 17:15:48.881  INFO 13976 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 13976 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 17:15:48.883  INFO 13976 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 17:15:48.940  INFO 13976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 17:15:48.940  INFO 13976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 17:15:50.195  INFO 13976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 17:15:50.277  INFO 13976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2020-12-15 17:15:51.056  INFO 13976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 17:15:51.068  INFO 13976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 17:15:51.071  INFO 13976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 17:15:51.161  INFO 13976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 17:15:51.164  INFO 13976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2223 ms
+2020-12-15 17:15:51.353  INFO 13976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 17:15:51.525  INFO 13976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 17:15:51.532  INFO 13976 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:0aa9007d-e5ae-4ec7-840b-f274675b9519'
+2020-12-15 17:15:51.662  INFO 13976 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 17:15:51.672  INFO 13976 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 17:15:51.730  INFO 13976 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 17:15:51.790  INFO 13976 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 17:15:51.892  WARN 13976 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 17:15:51.977  INFO 13976 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 17:15:52.155  INFO 13976 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 17:15:52.367  INFO 13976 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 17:15:52.471  INFO 13976 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 17:15:52.600  INFO 13976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 17:15:52.738  INFO 13976 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 17:15:52.863  INFO 13976 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e3ffccf1-0772-4107-b7e4-9317488e9d37
+
+2020-12-15 17:15:52.883  INFO 13976 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 17:15:52.891  INFO 13976 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 17:15:52.956  INFO 13976 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7887e36a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d3a3eb8, org.springframework.security.web.header.HeaderWriterFilter@556f6d16, org.springframework.security.web.authentication.logout.LogoutFilter@5f627b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26237a43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ea037b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@573132d7, org.springframework.security.web.session.SessionManagementFilter@5f64e17b, org.springframework.security.web.access.ExceptionTranslationFilter@6af43409, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4613fe3a]
+2020-12-15 17:15:53.066  INFO 13976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 17:15:53.067  INFO 13976 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 17:15:53.091  INFO 13976 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 17:15:53.133  INFO 13976 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 17:15:53.328  INFO 13976 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 17:15:53.335  INFO 13976 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 17:15:53.350  INFO 13976 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 17:15:53.787  INFO 13976 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 17:15:53.802  INFO 13976 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.358 seconds (JVM running for 5.886)
+2020-12-15 17:15:57.671  INFO 13976 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 17:17:16.922  INFO 15020 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 15020 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 17:17:16.926  INFO 15020 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 17:17:16.991  INFO 15020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 17:17:16.992  INFO 15020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 17:17:18.281  INFO 15020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 17:17:18.373  INFO 15020 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2020-12-15 17:17:19.155  INFO 15020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 17:17:19.169  INFO 15020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 17:17:19.172  INFO 15020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 17:17:19.277  INFO 15020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 17:17:19.281  INFO 15020 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2288 ms
+2020-12-15 17:17:19.439  INFO 15020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 17:17:19.632  INFO 15020 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 17:17:19.641  INFO 15020 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:8e67769b-b992-41b5-866b-1f888979a3b6'
+2020-12-15 17:17:19.802  INFO 15020 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 17:17:19.815  INFO 15020 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 17:17:19.877  INFO 15020 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 17:17:19.933  INFO 15020 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 17:17:20.029  WARN 15020 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 17:17:20.104  INFO 15020 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 17:17:20.248  INFO 15020 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 17:17:20.564  INFO 15020 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 17:17:20.662  INFO 15020 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 17:17:20.794  INFO 15020 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 17:17:20.932  INFO 15020 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 17:17:21.007  INFO 15020 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 17:17:21.020  INFO 15020 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 17:17:21.050  INFO 15020 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 11036b58-1b20-4b22-9590-0142c36c4e84
+
+2020-12-15 17:17:21.150  INFO 15020 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25c67364, org.springframework.security.web.context.SecurityContextPersistenceFilter@750dcccd, org.springframework.security.web.header.HeaderWriterFilter@662152f, org.springframework.security.web.authentication.logout.LogoutFilter@53726cf6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22504a36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49d88f1c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c749dd4, org.springframework.security.web.session.SessionManagementFilter@765355cc, org.springframework.security.web.access.ExceptionTranslationFilter@2ec08a2e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@969954b]
+2020-12-15 17:17:21.243  INFO 15020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 17:17:21.245  INFO 15020 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 17:17:21.268  INFO 15020 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 17:17:21.310  INFO 15020 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 17:17:21.494  INFO 15020 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 17:17:21.501  INFO 15020 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 17:17:21.518  INFO 15020 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 17:17:21.927  INFO 15020 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 17:17:21.945  INFO 15020 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.423 seconds (JVM running for 5.978)
+2020-12-15 17:17:25.418  INFO 15020 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 17:20:07.645  INFO 1196 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 1196 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 17:20:07.648  INFO 1196 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 17:20:07.705  INFO 1196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 17:20:07.705  INFO 1196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 17:20:09.012  INFO 1196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 17:20:09.083  INFO 1196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2020-12-15 17:20:09.846  INFO 1196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 17:20:09.861  INFO 1196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 17:20:09.864  INFO 1196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 17:20:09.961  INFO 1196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 17:20:09.964  INFO 1196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2258 ms
+2020-12-15 17:20:10.093  INFO 1196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 17:20:10.282  INFO 1196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 17:20:10.287  INFO 1196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:76e744c2-bfcf-46a0-b479-923ff6e4c2f3'
+2020-12-15 17:20:10.433  INFO 1196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 17:20:10.444  INFO 1196 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 17:20:10.510  INFO 1196 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 17:20:10.559  INFO 1196 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 17:20:10.653  WARN 1196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 17:20:10.702  INFO 1196 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 17:20:10.861  INFO 1196 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 17:20:11.115  INFO 1196 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 17:20:11.203  INFO 1196 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 17:20:11.320  INFO 1196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 17:20:11.447  INFO 1196 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 17:20:11.582  INFO 1196 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 068ca0b1-f7c0-4180-93b6-d8eac72f6fc0
+
+2020-12-15 17:20:11.627  INFO 1196 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 17:20:11.636  INFO 1196 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 17:20:11.678  INFO 1196 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f32b963, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f64e17b, org.springframework.security.web.header.HeaderWriterFilter@6af43409, org.springframework.security.web.authentication.logout.LogoutFilter@3df1fef0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d3a3eb8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27d321b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@719fd82d, org.springframework.security.web.session.SessionManagementFilter@55bdb2c8, org.springframework.security.web.access.ExceptionTranslationFilter@2be05a75, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40ff0f2c]
+2020-12-15 17:20:11.767  INFO 1196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 17:20:11.768  INFO 1196 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 17:20:11.789  INFO 1196 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 17:20:11.827  INFO 1196 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 17:20:12.024  INFO 1196 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 17:20:12.032  INFO 1196 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 17:20:12.046  INFO 1196 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 17:20:12.429  INFO 1196 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 17:20:12.450  INFO 1196 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.181 seconds (JVM running for 5.71)
+2020-12-15 17:20:16.359  INFO 1196 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 17:20:58.072  WARN 1196 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://Visagio-1078:8080/actuator, healthUrl=http://Visagio-1078:8080/actuator/health, serviceUrl=http://Visagio-1078:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information. Further attempts are logged on DEBUG level
+2020-12-15 17:28:57.152  INFO 8964 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 8964 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 17:28:57.154  INFO 8964 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 17:28:57.213  INFO 8964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 17:28:57.213  INFO 8964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 17:28:58.495  INFO 8964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 17:28:58.580  INFO 8964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2020-12-15 17:28:59.379  INFO 8964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 17:28:59.392  INFO 8964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 17:28:59.395  INFO 8964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 17:28:59.504  INFO 8964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 17:28:59.504  INFO 8964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2290 ms
+2020-12-15 17:28:59.658  INFO 8964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 17:28:59.847  INFO 8964 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 17:28:59.852  INFO 8964 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:e001c34a-a9b7-4cd1-bcf5-05ec84f20d2b'
+2020-12-15 17:29:00.002  INFO 8964 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 17:29:00.022  INFO 8964 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 17:29:00.086  INFO 8964 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 17:29:00.144  INFO 8964 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 17:29:00.243  WARN 8964 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 17:29:00.314  INFO 8964 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 17:29:00.491  INFO 8964 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 17:29:00.803  INFO 8964 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 17:29:00.924  INFO 8964 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 17:29:01.107  INFO 8964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 17:29:01.295  INFO 8964 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 17:29:01.466  INFO 8964 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9a85dc96-448b-4359-9433-949ce6680764
+
+2020-12-15 17:29:01.598  INFO 8964 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 17:29:01.608  INFO 8964 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 17:29:01.626  INFO 8964 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7887e36a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d3a3eb8, org.springframework.security.web.header.HeaderWriterFilter@556f6d16, org.springframework.security.web.authentication.logout.LogoutFilter@5f627b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26237a43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ea037b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@573132d7, org.springframework.security.web.session.SessionManagementFilter@5f64e17b, org.springframework.security.web.access.ExceptionTranslationFilter@6af43409, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4613fe3a]
+2020-12-15 17:29:01.757  INFO 8964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 17:29:01.762  INFO 8964 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 17:29:01.790  INFO 8964 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 17:29:01.843  INFO 8964 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 17:29:02.065  INFO 8964 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 17:29:02.065  INFO 8964 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 17:29:02.100  INFO 8964 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 17:29:02.726  INFO 8964 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 17:29:02.747  INFO 8964 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.975 seconds (JVM running for 6.472)
+2020-12-15 17:29:07.826  INFO 8964 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 17:34:37.657  INFO 2108 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 2108 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 17:34:37.660  INFO 2108 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 17:34:37.711  INFO 2108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 17:34:37.711  INFO 2108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 17:34:38.887  INFO 2108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 17:34:38.969  INFO 2108 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2020-12-15 17:34:39.638  INFO 2108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 17:34:39.646  INFO 2108 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 17:34:39.649  INFO 2108 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 17:34:39.735  INFO 2108 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 17:34:39.735  INFO 2108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2023 ms
+2020-12-15 17:34:39.870  INFO 2108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 17:34:40.043  INFO 2108 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 17:34:40.048  INFO 2108 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:f8041c8d-895d-4766-a915-4f1632b18fdb'
+2020-12-15 17:34:40.175  INFO 2108 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 17:34:40.189  INFO 2108 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 17:34:40.241  INFO 2108 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 17:34:40.297  INFO 2108 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 17:34:40.390  WARN 2108 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 17:34:40.449  INFO 2108 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 17:34:40.625  INFO 2108 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 17:34:40.851  INFO 2108 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 17:34:40.944  INFO 2108 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 17:34:41.063  INFO 2108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 17:34:41.196  INFO 2108 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 17:34:41.320  INFO 2108 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fe69163b-5ff1-4e9b-b547-dceaa1a1f57f
+
+2020-12-15 17:34:41.381  INFO 2108 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 17:34:41.391  INFO 2108 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 17:34:41.404 DEBUG 2108 --- [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for any request
+2020-12-15 17:34:41.412  INFO 2108 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c0bca02, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a99519f, org.springframework.security.web.header.HeaderWriterFilter@450b299f, org.springframework.security.web.authentication.logout.LogoutFilter@3bc003ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7dd4fd61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6de94286, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46e504a, org.springframework.security.web.session.SessionManagementFilter@207d6dca, org.springframework.security.web.access.ExceptionTranslationFilter@2fb7f3d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3387ca6c]
+2020-12-15 17:34:41.497  INFO 2108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 17:34:41.499  INFO 2108 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 17:34:41.523  INFO 2108 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 17:34:41.566  INFO 2108 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 17:34:41.755  INFO 2108 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 17:34:41.761  INFO 2108 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 17:34:41.780  INFO 2108 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 17:34:42.186  INFO 2108 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 17:34:42.201  INFO 2108 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 4.906 seconds (JVM running for 5.425)
+2020-12-15 17:34:45.904  INFO 2108 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 17:46:24.166  INFO 16932 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Starting LibraryApiApplication using Java 15.0.1 on Visagio-1078 with PID 16932 (C:\Users\Visagio\IdeaProjects\libraryAPI\target\classes started by Visagio in C:\Users\Visagio\IdeaProjects\libraryAPI)
+2020-12-15 17:46:24.168  INFO 16932 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : No active profile set, falling back to default profiles: default
+2020-12-15 17:46:24.223  INFO 16932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-15 17:46:24.223  INFO 16932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-15 17:46:25.385  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-15 17:46:25.452  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2020-12-15 17:46:26.200  INFO 16932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-15 17:46:26.216  INFO 16932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-15 17:46:26.219  INFO 16932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-15 17:46:26.310  INFO 16932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-15 17:46:26.313  INFO 16932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2089 ms
+2020-12-15 17:46:26.448  INFO 16932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-15 17:46:26.636  INFO 16932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-15 17:46:26.642  INFO 16932 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:db2ea0ba-d33b-4d57-9202-ce3146ca06a3'
+2020-12-15 17:46:26.790  INFO 16932 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-15 17:46:26.804  INFO 16932 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-12-15 17:46:26.861  INFO 16932 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-15 17:46:26.922  INFO 16932 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-15 17:46:26.955  WARN 16932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-15 17:46:27.072  INFO 16932 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-15 17:46:27.235  INFO 16932 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-15 17:46:27.488  INFO 16932 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-15 17:46:27.580  INFO 16932 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-15 17:46:27.690  INFO 16932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-15 17:46:27.832  INFO 16932 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-12-15 17:46:27.973  INFO 16932 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a1451082-f099-40aa-a7ef-1c69606f6359
+
+2020-12-15 17:46:28.042  INFO 16932 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-15 17:46:28.050  INFO 16932 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-15 17:46:28.070  INFO 16932 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3492f91b, org.springframework.security.web.context.SecurityContextPersistenceFilter@57dbee7a, org.springframework.security.web.header.HeaderWriterFilter@68fcc753, org.springframework.security.web.authentication.logout.LogoutFilter@4531953b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45c6d11e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70fe04f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70ef3165, org.springframework.security.web.session.SessionManagementFilter@6d8069f8, org.springframework.security.web.access.ExceptionTranslationFilter@2ed2e873, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@209b4166]
+2020-12-15 17:46:28.157  INFO 16932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-15 17:46:28.158  INFO 16932 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-12-15 17:46:28.180  INFO 16932 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-12-15 17:46:28.222  INFO 16932 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-12-15 17:46:28.413  INFO 16932 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2020-12-15 17:46:28.421  INFO 16932 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2020-12-15 17:46:28.435  INFO 16932 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-15 17:46:28.853  INFO 16932 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-15 17:46:28.871  INFO 16932 --- [restartedMain] c.c.libraryAPI.LibraryApiApplication     : Started LibraryApiApplication in 5.083 seconds (JVM running for 5.609)
+2020-12-15 17:46:32.773  INFO 16932 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 4e85f2c7a40c
+2020-12-15 17:51:04.719  WARN 16932 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=library-api, managementUrl=http://Visagio-1078:8080/actuator, healthUrl=http://Visagio-1078:8080/actuator/health, serviceUrl=http://Visagio-1078:8080/) at spring-boot-admin ([http://localhost:8081/instances]): I/O error on POST request for "http://localhost:8081/instances": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information. Further attempts are logged on DEBUG level
