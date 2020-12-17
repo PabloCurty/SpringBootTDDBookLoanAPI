@@ -1,5 +1,7 @@
 # SpringBootTDDBookLoanAPI
 
+[![Build Status](https://travis-ci.com/PabloCurty/SpringBootTDDBookLoanAPI.svg?branch=master)](https://travis-ci.com/PabloCurty/SpringBootTDDBookLoanAPI)
+
 1) Architecture and best practices:
 RESTful architecture,
 Api's RestFul,
