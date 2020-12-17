@@ -4,6 +4,7 @@ import com.curty.libraryAPI.api.dto.BookDOT;
 import com.curty.libraryAPI.exception.BusinessException;
 import com.curty.libraryAPI.model.entity.Book;
 import com.curty.libraryAPI.service.BookService;
+import com.curty.libraryAPI.service.LoanService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
@@ -42,6 +43,9 @@ public class BookControllerTest {
 
     @MockBean
     BookService service;
+
+    @MockBean
+    LoanService loanService;
 
     private BookDOT createNewBook() {
         return BookDOT.builder().author("Fulano").title("Titulo").isbn("12345").build();
