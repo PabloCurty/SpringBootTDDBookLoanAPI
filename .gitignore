@@ -5,6 +5,7 @@
 # Log file
 *.log
 appfile.log
+appfile.log.2020-12-17.0.gz
 
 # BlueJ files
 *.ctxt

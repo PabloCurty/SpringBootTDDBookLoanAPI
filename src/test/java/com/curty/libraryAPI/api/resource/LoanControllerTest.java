@@ -34,7 +34,6 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Optional;
 
-import static com.curty.libraryAPI.api.resource.BookControllerTest.BOOK_API;
 import static com.curty.libraryAPI.service.LoanServiceTest.createBook;
 import static com.curty.libraryAPI.service.LoanServiceTest.createLoan;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
