@@ -31,6 +31,9 @@ Metrics and api monitoring with actuator and spring boot admin.
 Continuous Deploy Configuration ,
 Continuous Deploy with CI Trails.
 
+JACOCO to generate Code Coverage report.
+CODCOV to visualization the Code coverage and integrate with Travis CI.
+
 7) Publishing:
 API publishing in the cloud.
 
