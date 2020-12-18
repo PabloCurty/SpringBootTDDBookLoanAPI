@@ -1,6 +1,12 @@
 # SpringBootTDDBookLoanAPI
 
+[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
+![Whitespace](Whitespace.png)
+[![Codecov logo](Codecov.png)](https://www.codecov.io)
+
 [![Build Status](https://travis-ci.com/PabloCurty/SpringBootTDDBookLoanAPI.svg?branch=master)](https://travis-ci.com/PabloCurty/SpringBootTDDBookLoanAPI)
+
+[![codecov.io](https://codecov.io/gh/PabloCurty/SpringBootTDDBookLoanAPI/coverage.svg?branch=master)]
 
 1) Architecture and best practices:
 RESTful architecture,
