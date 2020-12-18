@@ -6,7 +6,7 @@
 
 [![Build Status](https://travis-ci.com/PabloCurty/SpringBootTDDBookLoanAPI.svg?branch=master)](https://travis-ci.com/PabloCurty/SpringBootTDDBookLoanAPI)
 
-[![codecov.io](https://codecov.io/gh/PabloCurty/SpringBootTDDBookLoanAPI/coverage.svg?branch=master)]
+[![codecov](https://codecov.io/gh/PabloCurty/SpringBootTDDBookLoanAPI/branch/master/graph/badge.svg?token=867S3TQ585)](https://codecov.io/gh/PabloCurty/SpringBootTDDBookLoanAPI)
 
 1) Architecture and best practices:
 RESTful architecture,
