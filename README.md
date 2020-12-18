@@ -1,11 +1,6 @@
 # SpringBootTDDBookLoanAPI
 
-[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
-![Whitespace](Whitespace.png)
-[![Codecov logo](Codecov.png)](https://www.codecov.io)
-
 [![Build Status](https://travis-ci.com/PabloCurty/SpringBootTDDBookLoanAPI.svg?branch=master)](https://travis-ci.com/PabloCurty/SpringBootTDDBookLoanAPI)
-
 [![codecov](https://codecov.io/gh/PabloCurty/SpringBootTDDBookLoanAPI/branch/master/graph/badge.svg?token=867S3TQ585)](https://codecov.io/gh/PabloCurty/SpringBootTDDBookLoanAPI)
 
 1) Architecture and best practices:
