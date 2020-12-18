@@ -110,9 +110,9 @@
 				<configuration>
 					<excludes>
 						<!-- exclude classes -->
-						<exclude>com/curty/libraryAPI/model</exclude>
+						<exclude>com/curty/libraryAPI/model/**/*</exclude>
 						<!-- exclude classes -->
-						<exclude>com/curty/libraryAPI/api/dto</exclude>
+						<exclude>com/curty/libraryAPI/api/dto/**/*</exclude>
 					</excludes>
 				</configuration>
 				<executions>
