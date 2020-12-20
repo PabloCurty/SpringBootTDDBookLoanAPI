@@ -6,6 +6,8 @@
 *.log
 appfile.log
 appfile.log.2020-12-17.0.gz
+appfile.log.2020-12-18.0.gz
+appfile.log.*.gz
 
 # BlueJ files
 *.ctxt
