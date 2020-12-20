@@ -15,7 +15,7 @@
 	<description>API from book rent in libraries</description>
 
 	<properties>
-		<java.version>11</java.version>
+		
 		<spring-boot-admin.version>2.3.1</spring-boot-admin.version>
 	</properties>
 
@@ -102,7 +102,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>2.4.1</version>
 			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
