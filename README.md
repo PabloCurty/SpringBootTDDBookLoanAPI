@@ -29,13 +29,14 @@ Metrics and api monitoring with actuator and spring boot admin.
 
 6) DevOps:
 Continuous Deploy Configuration ,
-Continuous Deploy with CI Trails.
+Continuous Deploy with Travis CI.
 
 JACOCO to generate Code Coverage report.
 CODCOV to visualization the Code coverage and integrate with Travis CI.
 
 7) Publishing:
 API publishing in the cloud.
+Publishing with heroku, after Continuios Deploy with Travis CI, and after push with Git.
 
 
 
