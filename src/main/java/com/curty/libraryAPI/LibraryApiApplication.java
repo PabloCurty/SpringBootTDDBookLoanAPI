@@ -8,8 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class LibraryApiApplication {
-
+public class LibraryApiApplication{ //para gerar .war extends SpringBootServletInitializer {
 	/*@Autowired
 	private EmailService emailService;*/
 
